@@ -25,10 +25,9 @@ def cuphead_random_eq(plane=False):
     }
     text="Ekwipunek:\n"
     for i in ekwipunke:
-        text+=f'\t{i}: {random.choice(ekwipunke[i])}'+"\n"
+        text+=f'> {i}: {random.choice(ekwipunke[i])}'+"\n"
     return text
 def cuphead_one_boss():
-    
     bosses=[#0 for normal 1 for airplane
         ("The root pack",0),
         ("Goopy Le Grande",0),
@@ -52,17 +51,20 @@ def cuphead_one_boss():
     boss=random.choice(bosses)
     text=cuphead_random_eq(boss[1])
     if boss[0]=="King Dice":
-        text+="\tBroń na samolot: "+random.choice(['normalny','bomby'])
+        text+="> Broń na samolot: "+random.choice(['normalny','bomby'])
     return f"Twoje zadanie to pokonać jednego bossa\nWalczysz z:{boss[0]}\n"+text
 def cuphead_island():
     islands=["WORLD 1","WORLD 2","WORLD 3","FINALE"]
     island=random.choice(islands)
     text=cuphead_random_eq()
-    text+="\tBroń na samolot: "+random.choice(['normalny','bomby'])
+    text+="> Broń na samolot: "+random.choice(['normalny','bomby'])
     return f"twoje zadanie to pokonać każdego bossa na {island}\n\n"+text
+
 quests_e=[
-    Quest("Cuphead",'none',1,generator=cuphead_one_boss),
+    Quest("Cuphead",'none',1,generator=cuphead_one_boss), #index = 0 itp
     Quest("fortnite","wygraj solo!",1),
+    Quest("Slay the Spire","none",1,generator=lambda: f"Pokonaj bossa aktu II postacią {random.choice(['Pancernik','Cień','Defekt'])}"),
+    Quest("Brawhalla","wygranie dwóch rankedów",1),
 ]
 quests_h=[
     Quest("Cuphead",'none',2,generator=cuphead_island)
