@@ -62,25 +62,25 @@ def cuphead_island():
     return f"twoje zadanie to pokonać każdego bossa na {island}\n\n"+text
 
 quests_e=[
-    Quest("Cuphead",'none',1,generator=cuphead_one_boss,link="steam://rungameid/268910"), #index = 0 itp
+    Quest("Cuphead",'none',1,generator=cuphead_one_boss), #index = 0 itp
     Quest("fortnite","wygraj solo!",1),
     Quest("Slay the Spire","none",1,generator=lambda: f"Pokonaj bossa aktu II postacią {random.choice(['Pancernik','Cień','Defekt'])}"),
-    Quest("Brawhalla","wygranie dwóch rankedów",1,link="steam://rungameid/291550"),
-    Quest("Celeste","Przejście gry do 5 chapteru",1,link="steam://rungameid/504230"),
-    Quest("bloons td6","przejście dziennego trudnego wyzwania",1,link="steam://rungame/960090"),#620
-    Quest("portal 2", 'Przejście poziomu "portalowe działo" z użyciem jednego teleportu',1,link="steam://rungameid/620"),
-    Quest("Celeste","przejście pierwszego chapteru bez dashów",1,link="steam://rungameid/504230"),
+    Quest("Brawhalla","wygranie dwóch rankedów",1),
+    Quest("Celeste","Przejście gry do 5 chapteru",1),
+    Quest("bloons td6","przejście dziennego trudnego wyzwania",1),#620
+    Quest("portal 2", 'Przejście poziomu "portalowe działo" z użyciem jednego teleportu',1),
+    Quest("Celeste","przejście pierwszego chapteru bez dashów",1),
     Quest("Cookie Clicker","kliknij w jedno złote ciastko",1,link="https://orteil.dashnet.org/cookieclicker/"),
     Quest("Wikispeedrun","none",1,generator=lambda: f"zaczynając od losowego artykuło dojdz do {random.choice(['Stalin','Hilter','Mussolini'])} w mniej niż 10 minut", link="https://wikispeedruns.com/"),
-    Quest("portal 2","przejść pierwszą połowę gry",1,link="steam://rungame/620"),
+    Quest("portal 2","przejść pierwszą połowę gry",1),
     Quest("Dead Cells", "przejść do TRZECIEJ strefy na defultowym ekwipunku",1),
-    Quest("Celeste","przejść drugi chapter na wszystkich assystach włączonych",1,link="steam://rungameid/504230"),
+    Quest("Celeste","przejść drugi chapter na wszystkich assystach włączonych",1),
     Quest("Cookie Clicker","Zdobyć dwa mroczne achivmenty",1,link="https://orteil.dashnet.org/cookieclicker/"),
-    Quest("bloons td6","Zrobić mapę na trybe HARD",1,link="steam://rungame/960090"),
+    Quest("bloons td6","Zrobić mapę na trybe HARD",1),
     Quest("IRL","Nauczyć się wybranego wiersza na pamięc",1,link="https://wolnelektury.pl/katalog/gatunek/wiersz/"),
     Quest("OSU", "przejdź dowolną 3 gwiazdkową mapę ma być “trudna”",1)
 ]
 quests_h=[
-    Quest("Brawlhalla","Zamiana klawiatura na pada lub na odwrót (wygranie trzech gier)",1,link="steam://rungameid/291550"),
-    Quest("Cuphead",'none',2,generator=cuphead_island,link="steam://rungameid/268910"),
+    Quest("Brawlhalla","Zamiana klawiatura na pada lub na odwrót (wygranie trzech gier)",1),
+    Quest("Cuphead",'none',2,generator=cuphead_island),
 ]
