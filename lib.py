@@ -66,7 +66,8 @@ quests_e=[
     Quest("fortnite","wygraj solo!",1),
     Quest("Slay the Spire","none",1,generator=lambda: f"Pokonaj bossa aktu II postacią {random.choice(['Pancernik','Cień','Defekt'])}"),
     Quest("Brawhalla","wygranie dwóch rankedów",1),
-    Quest("Celeste","Przejście gry do 5 chapteru",1)
+    Quest("Celeste","Przejście gry do 5 chapteru",1),
+     Quest("Celeste","Przejście gry do 5 chapteru",1)
 ]
 quests_h=[
     Quest("Cuphead",'none',2,generator=cuphead_island)
