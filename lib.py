@@ -62,12 +62,12 @@ def cuphead_island():
     return f"twoje zadanie to pokonać każdego bossa na {island}\n\n"+text
 
 quests_e=[
-    Quest("Cuphead",'none',1,generator=cuphead_one_boss), #index = 0 itp
+    Quest("Cuphead",'none',1,generator=cuphead_one_boss,link="steam://rungameid/268910"), #index = 0 itp
     Quest("fortnite","wygraj solo!",1),
     Quest("Slay the Spire","none",1,generator=lambda: f"Pokonaj bossa aktu II postacią {random.choice(['Pancernik','Cień','Defekt'])}"),
     Quest("Brawhalla","wygranie dwóch rankedów",1),
     Quest("Celeste","Przejście gry do 5 chapteru",1),
-     Quest("Celeste","Przejście gry do 5 chapteru",1)
+    Quest("bloons td6",)
 ]
 quests_h=[
     Quest("Cuphead",'none',2,generator=cuphead_island)
