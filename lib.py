@@ -1,5 +1,6 @@
 import discord
 import random
+version=0.1
 
 class Quest:
     
