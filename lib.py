@@ -4,11 +4,11 @@ version=0.2
 
 class Quest:
     
-    color=["#33ff33","#ff3333"]
+    color=["#33ff33","#ff3333","#ffff33"]
     def __init__(self,game_name,description:str,level:int,link=None,generator=None):
         self.name=game_name
         self.desc=description
-        self.lvl=["łatwy","trudny"][level-1]
+        self.lvl=["łatwy","trudny","trudny/kto pierwszy ten lepszy"][level-1]
         self.level=level
         self.link=link
         self.gen=generator
@@ -81,6 +81,53 @@ quests_e=[
     Quest("OSU", "przejdź dowolną 3 gwiazdkową mapę ma być “trudna”",1)
 ]
 quests_h=[
-    Quest("Brawlhalla","Zamiana klawiatura na pada lub na odwrót (wygranie trzech gier)",1),
+    Quest("Brawlhalla","Zamiana klawiatura na pada lub na odwrót (wygranie trzech gier)",2),
+    Quest("the Messenger","bez upgradów do ogrów",2),
+    Quest("the Messenger","bez śmierci do ogrów",2),
+    Quest("Celeste","1c i 2c i 7c bez śmierci PODRZĄD",2),
+    Quest("bloons td6","Przejście wspólnie ustalonego wyzwania którego przeszło mniej niż 2\% graczy",2),
+    Quest("Brawlhalla","wygranie jednej normalnej gry tylko łapkami",2),
+    Quest("cookie clicker","50 babć",2,link="https://orteil.dashnet.org/cookieclicker/"),
+    Quest("slay the spire","wyzwanie dzienne",2),
+    Quest("IRL","dotknąć trawę i przesłać zdjęcie!",link="https://w1.pngwing.com/pngs/507/107/png-transparent-grass-sweet-grass-vetiver-commodity-wheatgrass-plant-stem-chrysopogon-grasses.png"),
     Quest("Cuphead",'none',2,generator=cuphead_island),
+    Quest("IRL","none",lambda:f"Wyrzucić 6 razy pod rząd {'⚀⚁⚂⚃⚄⚅'[random.randint(0,5)]} na kości k6"),
+    Quest("Cuphead","Jagódka no hit",2,link="https://pl.wikipedia.org/wiki/Pokrzyk_wilcza_jagoda"),
+    Quest("Technik Inforatyk","nauczyć się języka programowania(uzgadniamy jaki) i napisać:\n>obliczał objęcość i pole sześcianu o boku n\n>pętle liczącą do 100\n> i jak ktoś jest chętny to fizzbuzz",2,link="https://esolangs.org/wiki/FizzBuzz"),
+    Quest("Duck Game","losowy automat na 2 medale!",2),
+    Quest("Hollow Knight","na nowym koncie zabić pierwszego (prawdziwego) bossa (maksymalnie można dostać tylko raz)",2),
+    Quest("Comic Sans","doprowadzić sansa do pierwszego potu (na stronie)",link="https://jcw87.github.io/c2-sans-fight/"),
+    Quest("Vanitas",r"zrobić dzisiejsze trudne wyzwanie ¯\_(ツ)_/¯",2,link="https://www.youtube.com/watch?v=xm3YgoEiEDc&ab_channel=skisles"),
+    Quest("IRL","Policz do tysiąca",2,link="https://scp-wiki.wikidot.com/scp-series"),
+    Quest("Celeste","Nagrać i wrzucić film na wybrany temat(z tego questa można zrezygnować)",2),
+    Quest("Fortnite","Wygrać wspólnie ustalonego deathrana",2,link="https://www.fortnitemaps.com/section/death_runs"),
+    Quest("Celeste","1a,2a,3a bez śmierci na nowym save",2),
+    Quest("Sudoku","ukończ poziom średni",link="https://sudoku.com/medium/"),
+    Quest("Cuphead","tylko defyltowa broń (bez charmów, bez ultów, i bez bomb na samolotach)\n osoba która dokona tego szybciej (liczy się suma czasów bossów) dostaje punkty",3),
+    Quest("Brawhalla","pokonać bota ustawionego na tryb chason",2),
+    Quest("Celeste","przejść do 5a na padzie",2)
 ]
+"""
+A SPECTER is haunting Europe--the specter of comm
+nism. All the powers of old Europe have entered into
+holy alliance to exorcise this specter: Pope and Czar, M
+ternich and Cuizot, 1 French Radicals2 and German poli
+spies.
+Wh r~ is the party in opposition that has not been d
+cried as communistic by its opponents in power? Whe
+the Opposition thnt has not hurled back the branding r
+proach of communism, against the more advanced oppo
+tion parties, as w<'ll as against its reactionary adversari
+Two things result from this fact:
+I. Communism is already acknowledged by all Europe
+powers to be ils<'lf a power.
+II. It is high lime that Communists should openly, ·
+the face of the whole world, publish their views, th
+aims, their tendencies, and meet this nursery tale of t
+spect<'r of communism with a manifesto of the party itse
+To this end, Communists of various nationalities ha
+ao;;sembled in London, and sketched the followin~ rna
+festo, to be published in the English, Fr
+
+
+"""
