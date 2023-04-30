@@ -91,7 +91,7 @@ quests_h=[
     Quest("slay the spire","wyzwanie dzienne",2),
     Quest("IRL","dotknąć trawę i przesłać zdjęcie!",2,link="https://w1.pngwing.com/pngs/507/107/png-transparent-grass-sweet-grass-vetiver-commodity-wheatgrass-plant-stem-chrysopogon-grasses.png"),
     Quest("Cuphead",'none',2,generator=cuphead_island),
-    Quest("IRL","none",2,lambda:f"Wyrzucić 6 razy pod rząd {'⚀⚁⚂⚃⚄⚅'[random.randint(0,5)]} na kości k6"),
+    Quest("IRL","none",2,generator=lambda:f"Wyrzucić 6 razy pod rząd {'⚀⚁⚂⚃⚄⚅'[random.randint(0,5)]} na kości k6"),
     Quest("Cuphead","Jagódka no hit",2,link="https://pl.wikipedia.org/wiki/Pokrzyk_wilcza_jagoda"),
     Quest("Technik Inforatyk","nauczyć się języka programowania(uzgadniamy jaki) i napisać:\n>obliczał objęcość i pole sześcianu o boku n\n>pętle liczącą do 100\n> i jak ktoś jest chętny to fizzbuzz",2,link="https://esolangs.org/wiki/FizzBuzz"),
     Quest("Duck Game","losowy automat na 2 medale!",2),
