@@ -78,7 +78,8 @@ quests_e=[
     Quest("Cookie Clicker","Zdobyć dwa mroczne achivmenty",1,link="https://orteil.dashnet.org/cookieclicker/"),
     Quest("bloons td6","Zrobić mapę na trybe HARD",1),
     Quest("IRL","Nauczyć się wybranego wiersza na pamięc",1,link="https://wolnelektury.pl/katalog/gatunek/wiersz/"),
-    Quest("OSU", "przejdź dowolną 3 gwiazdkową mapę ma być “trudna”",1)
+    Quest("OSU", "przejdź dowolną 3 gwiazdkową mapę ma być “trudna”",1),
+    Quest("Don't touch the spikes","zdobąć 50 punktów w jednej grze",1),
 ]
 quests_h=[
     Quest("Brawlhalla","Zamiana klawiatura na pada lub na odwrót (wygranie trzech gier)",2),
@@ -105,7 +106,8 @@ quests_h=[
     Quest("Sudoku","ukończ poziom średni",link="https://sudoku.com/medium/"),
     Quest("Cuphead","tylko defyltowa broń (bez charmów, bez ultów, i bez bomb na samolotach)\n osoba która dokona tego szybciej (liczy się suma czasów bossów) dostaje punkty",3),
     Quest("Brawhalla","pokonać bota ustawionego na tryb chason",2),
-    Quest("Celeste","przejść do 5a na padzie",2)
+    Quest("Celeste","przejść do 5a na padzie",2),
+    Quest("Don't touch the spikes","zdobąć 70 punktów w jednej grze",1),
 ]
 """
 A SPECTER is haunting Europe--the specter of comm
