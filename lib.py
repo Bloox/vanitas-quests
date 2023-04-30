@@ -1,11 +1,11 @@
 import discord
 import random
-version=0.2
+version=0.3
 
 class Quest:
     
     color=["#33ff33","#ff3333","#ffff33"]
-    def __init__(self,game_name,description:str,level:int,link=None,generator=None):
+    def __init__(self,game_name,description:str,level:int=2,link:str=None,generator=None):
         self.name=game_name
         self.desc=description
         self.lvl=["łatwy","trudny","trudny/kto pierwszy ten lepszy"][level-1]
@@ -89,14 +89,14 @@ quests_h=[
     Quest("Brawlhalla","wygranie jednej normalnej gry tylko łapkami",2),
     Quest("cookie clicker","50 babć",2,link="https://orteil.dashnet.org/cookieclicker/"),
     Quest("slay the spire","wyzwanie dzienne",2),
-    Quest("IRL","dotknąć trawę i przesłać zdjęcie!",link="https://w1.pngwing.com/pngs/507/107/png-transparent-grass-sweet-grass-vetiver-commodity-wheatgrass-plant-stem-chrysopogon-grasses.png"),
+    Quest("IRL","dotknąć trawę i przesłać zdjęcie!",2,link="https://w1.pngwing.com/pngs/507/107/png-transparent-grass-sweet-grass-vetiver-commodity-wheatgrass-plant-stem-chrysopogon-grasses.png"),
     Quest("Cuphead",'none',2,generator=cuphead_island),
-    Quest("IRL","none",lambda:f"Wyrzucić 6 razy pod rząd {'⚀⚁⚂⚃⚄⚅'[random.randint(0,5)]} na kości k6"),
+    Quest("IRL","none",2,lambda:f"Wyrzucić 6 razy pod rząd {'⚀⚁⚂⚃⚄⚅'[random.randint(0,5)]} na kości k6"),
     Quest("Cuphead","Jagódka no hit",2,link="https://pl.wikipedia.org/wiki/Pokrzyk_wilcza_jagoda"),
     Quest("Technik Inforatyk","nauczyć się języka programowania(uzgadniamy jaki) i napisać:\n>obliczał objęcość i pole sześcianu o boku n\n>pętle liczącą do 100\n> i jak ktoś jest chętny to fizzbuzz",2,link="https://esolangs.org/wiki/FizzBuzz"),
     Quest("Duck Game","losowy automat na 2 medale!",2),
     Quest("Hollow Knight","na nowym koncie zabić pierwszego (prawdziwego) bossa (maksymalnie można dostać tylko raz)",2),
-    Quest("Comic Sans","doprowadzić sansa do pierwszego potu (na stronie)",link="https://jcw87.github.io/c2-sans-fight/"),
+    Quest("Comic Sans","doprowadzić sansa do pierwszego potu (na stronie)",2,link="https://jcw87.github.io/c2-sans-fight/"),
     Quest("Vanitas",r"zrobić dzisiejsze trudne wyzwanie ¯\_(ツ)_/¯",2,link="https://www.youtube.com/watch?v=xm3YgoEiEDc&ab_channel=skisles"),
     Quest("IRL","Policz do tysiąca",2,link="https://scp-wiki.wikidot.com/scp-series"),
     Quest("Celeste","Nagrać i wrzucić film na wybrany temat(z tego questa można zrezygnować)",2),
