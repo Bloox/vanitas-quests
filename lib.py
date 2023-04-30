@@ -107,7 +107,7 @@ quests_h=[
     Quest("Cuphead","tylko defyltowa broń (bez charmów, bez ultów, i bez bomb na samolotach)\n osoba która dokona tego szybciej (liczy się suma czasów bossów) dostaje punkty",3),
     Quest("Brawhalla","pokonać bota ustawionego na tryb chason",2),
     Quest("Celeste","przejść do 5a na padzie",2),
-    Quest("Don't touch the spikes","zdobąć 70 punktów w jednej grze",1),
+    Quest("Don't touch the spikes","zdobąć 70 punktów w jednej grze",2),
 ]
 """
 A SPECTER is haunting Europe--the specter of comm
